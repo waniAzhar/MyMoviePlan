@@ -1,0 +1,62 @@
+<img [src]="card.imageUrl" class=" col-md-3" alt="...">
+<h1>
+{{card.title}}
+</h1>
+<h4>
+    {{card.id}}
+    <br>
+    {{card.price}}$
+</h4>
+
+<form [formGroup]="cardForm" (ngSubmit)="cardSubmit(cardForm)">
+    <input type="text"
+      id="imageUrl"
+      placeholder="imageUrl"
+      name="imageUrl"
+      formControlName="imageUrl"
+      />
+      <br>
+      <input type="text"
+      id="title"
+      placeholder="title"
+      name="title"
+      formControlName="title"
+      />
+      <input type="text"
+      id="genre"
+      placeholder="genre"
+      name="genre"
+      formControlName="genre"
+      />
+      <input type="text"
+      id="language"
+      placeholder="language"
+      name="language"
+      formControlName="language"
+      />
+      <input type="text"
+      id="price"
+      placeholder="price"
+      name="price"
+      formControlName="price"
+      />
+      <input type="text"
+      id="date"
+      placeholder="date"
+      name="date"
+      formControlName="date"
+      />
+      <input type="text"
+      id="place"
+      placeholder="place"
+      name="place"
+      formControlName="place"
+      />
+      <input type="text"
+      id="description"
+      placeholder="description"
+      name="description"
+      formControlName="description"
+      />
+  <button type="submit">submit</button>
+  </form>
